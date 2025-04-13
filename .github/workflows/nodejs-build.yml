@@ -1,0 +1,16 @@
+name: Nodejs build
+on: push
+jobs:
+  npm-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: run pwd
+        run: pwd
+      - name: npm version check
+        run: npm --version
+      - name: npm install
+        run: npm install
+      - name: npm build
+        run: npm run build
