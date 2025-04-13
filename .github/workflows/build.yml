@@ -1,0 +1,15 @@
+name: My first workflow
+on: push
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run pwd
+        run: pwd
+      - name: run ls
+        run: ls
+  job2:
+    runs-on: windows-latest
+    steps:
+      - name: run pwd
+        run: node --version
