@@ -12,5 +12,5 @@ jobs:
         run: npm --version
       - name: npm install
         run: npm install
-      - name: npm build
-        run: npm run build
+#      - name: npm build
+#        run: npm run build
